@@ -1,0 +1,328 @@
+/* Mobile-specific styles for FloTechPack */
+
+/* Mobile breakpoints and utilities */
+@media (max-width: 640px) {
+  /* Mobile header adjustments */
+  .mobile-header {
+    @apply px-3 py-2;
+  }
+  
+  .mobile-header-icon {
+    @apply w-8 h-8;
+  }
+  
+  .mobile-header-title {
+    @apply text-lg;
+  }
+  
+  .mobile-header-subtitle {
+    @apply text-xs;
+  }
+
+  /* Mobile navigation */
+  .mobile-nav {
+    @apply flex flex-col gap-2;
+  }
+  
+  .mobile-nav-item {
+    @apply w-full text-center py-3 px-4 rounded-lg;
+  }
+
+  /* Mobile forms */
+  .mobile-form-grid {
+    @apply grid grid-cols-1 gap-4;
+  }
+  
+  .mobile-form-field {
+    @apply w-full;
+  }
+  
+  .mobile-form-label {
+    @apply text-sm font-medium mb-1;
+  }
+  
+  .mobile-form-input {
+    @apply w-full px-3 py-2 text-base;
+  }
+  
+  .mobile-form-select {
+    @apply w-full px-3 py-2 text-base;
+  }
+  
+  .mobile-form-textarea {
+    @apply w-full px-3 py-2 text-base resize-none;
+  }
+
+  /* Mobile buttons */
+  .mobile-btn-primary {
+    @apply w-full py-3 px-4 text-base font-semibold rounded-lg;
+  }
+  
+  .mobile-btn-secondary {
+    @apply w-full py-2 px-4 text-base rounded-lg;
+  }
+  
+  .mobile-btn-icon {
+    @apply w-10 h-10 p-2;
+  }
+
+  /* Mobile cards */
+  .mobile-card {
+    @apply p-4 rounded-lg shadow-sm;
+  }
+  
+  .mobile-card-header {
+    @apply pb-3 mb-3 border-b;
+  }
+  
+  .mobile-card-content {
+    @apply space-y-3;
+  }
+
+  /* Mobile preview adjustments */
+  .mobile-preview-container {
+    @apply px-2 py-4;
+  }
+  
+  .mobile-preview-header {
+    @apply flex flex-col gap-3 p-3;
+  }
+  
+  .mobile-preview-content {
+    @apply space-y-4;
+  }
+  
+  .mobile-preview-section {
+    @apply p-3 rounded-lg;
+  }
+
+  /* Mobile preview size optimization */
+  .main-frame {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    aspect-ratio: 210/297 !important;
+    transform: none !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Ensure single page layout */
+  .mobile-preview-wrapper {
+    @apply flex flex-col items-center justify-start min-h-screen;
+  }
+  
+  /* Reduce spacing in mobile preview */
+  .mobile-preview-spacing {
+    @apply space-y-1;
+  }
+  
+  /* Smaller text in mobile preview */
+  .mobile-preview-text {
+    @apply text-xs;
+  }
+  
+  /* Compact mobile sections */
+  .mobile-preview-section-compact {
+    @apply mb-1 p-1;
+  }
+
+  /* Mobile preview content scaling */
+  .mobile-preview-content {
+    font-size: 0.6rem !important;
+    line-height: 1.1 !important;
+  }
+  
+  /* Ultra-small mobile text */
+  .mobile-preview-ultra-small {
+    font-size: 0.5rem !important;
+    line-height: 1.0 !important;
+  }
+  
+  /* Mobile preview headers */
+  .mobile-preview-header {
+    @apply text-sm font-semibold mb-1;
+  }
+  
+  /* Mobile preview images */
+  .mobile-preview-image {
+    @apply w-16 h-16;
+  }
+  
+  /* Mobile preview tables */
+  .mobile-preview-table {
+    @apply text-xs;
+  }
+  
+  /* Mobile preview cards */
+  .mobile-preview-card {
+    @apply p-2 mb-1;
+  }
+  
+  /* Mobile preview buttons */
+  .mobile-preview-button {
+    @apply text-xs px-2 py-1;
+  }
+
+  /* Mobile image containers */
+  .mobile-image-grid {
+    @apply grid grid-cols-1 gap-3;
+  }
+  
+  .mobile-image-container {
+    @apply w-full aspect-square;
+  }
+  
+  .mobile-image-label {
+    @apply text-xs font-medium p-1;
+  }
+
+  /* Mobile tables */
+  .mobile-table-container {
+    @apply overflow-x-auto;
+  }
+  
+  .mobile-table {
+    @apply min-w-full text-sm;
+  }
+  
+  .mobile-table-cell {
+    @apply px-2 py-1 text-xs;
+  }
+
+  /* Mobile comments */
+  .mobile-comment-container {
+    @apply relative;
+  }
+  
+  .mobile-comment-input {
+    @apply w-full min-h-[40px] p-2 text-sm;
+  }
+  
+  .mobile-comment-display {
+    @apply p-2 text-sm bg-white/80 rounded;
+  }
+
+  /* Mobile step navigation */
+  .mobile-step-nav {
+    @apply flex justify-between items-center p-3;
+  }
+  
+  .mobile-step-indicator {
+    @apply text-xs font-medium;
+  }
+  
+  .mobile-step-buttons {
+    @apply flex gap-2;
+  }
+
+  /* Mobile category checkboxes */
+  .mobile-category-grid {
+    @apply grid grid-cols-1 gap-2;
+  }
+  
+  .mobile-category-item {
+    @apply flex items-center p-2 rounded border;
+  }
+
+  /* Mobile material type selection */
+  .mobile-material-grid {
+    @apply grid grid-cols-1 gap-3;
+  }
+  
+  .mobile-material-card {
+    @apply p-3 rounded-lg border;
+  }
+
+  /* Mobile color grouping */
+  .mobile-color-grid {
+    @apply grid grid-cols-1 gap-3;
+  }
+  
+  .mobile-color-group {
+    @apply p-3 rounded-lg border;
+  }
+
+  /* Mobile size chart */
+  .mobile-size-chart {
+    @apply overflow-x-auto;
+  }
+  
+  .mobile-size-table {
+    @apply min-w-[600px] text-xs;
+  }
+
+  /* Mobile preview toggle */
+  .mobile-preview-toggle {
+    @apply flex items-center justify-center p-2;
+  }
+  
+  .mobile-toggle-switch {
+    @apply w-12 h-6;
+  }
+
+  /* Mobile toast messages */
+  .mobile-toast {
+    @apply fixed top-2 left-2 right-2 z-50 p-3 rounded-lg text-sm;
+  }
+
+  /* Mobile modal adjustments */
+  .mobile-modal {
+    @apply fixed inset-0 z-50 flex items-end sm:items-center;
+  }
+  
+  .mobile-modal-content {
+    @apply w-full max-h-[90vh] overflow-y-auto;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-grid-2 {
+    @apply grid grid-cols-2 gap-4;
+  }
+  
+  .tablet-grid-3 {
+    @apply grid grid-cols-3 gap-4;
+  }
+  
+  .tablet-preview-container {
+    @apply px-4 py-6;
+  }
+}
+
+/* Touch-friendly adjustments */
+@media (hover: none) and (pointer: coarse) {
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  .touch-button {
+    @apply py-3 px-4 text-base;
+  }
+  
+  .touch-input {
+    @apply py-3 px-4 text-base;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .high-dpi-image {
+    @apply object-contain;
+  }
+}
+
+/* Landscape mobile adjustments */
+@media (max-width: 640px) and (orientation: landscape) {
+  .landscape-mobile-header {
+    @apply py-1;
+  }
+  
+  .landscape-mobile-content {
+    @apply py-2;
+  }
+  
+  .landscape-mobile-preview {
+    @apply max-h-[80vh] overflow-y-auto;
+  }
+}

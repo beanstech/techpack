@@ -1,0 +1,15 @@
+node_modules
+build
+coverage
+dist
+.vite
+.DS_Store
+
+# generated bundles
+*.min.js
+*.min.css
+
+# lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
